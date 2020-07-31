@@ -1,0 +1,104 @@
+const { ref: sunlightChar2Ref } = useWebAnimations({
+        keyframes: sunlightKeyframes,
+        timing: {...sunlightTiming, delay: 250}
+    });
+    
+    const { ref: sunlightChar3Ref } = useWebAnimations({
+        keyframes: sunlightKeyframes,
+        timing: {...sunlightTiming, delay: 500}
+    });
+    
+    const { ref: sunlightChar4Ref } = useWebAnimations({
+        keyframes: sunlightKeyframes,
+        timing: {...sunlightTiming, delay: 750}
+    });
+    
+    const { ref: sunlightChar5Ref } = useWebAnimations({
+        keyframes: sunlightKeyframes,
+        timing: {...sunlightTiming, delay: 1000}
+    });
+    
+    const { ref: sunlightChar6Ref } = useWebAnimations({
+        keyframes: sunlightKeyframes,
+        timing: {...sunlightTiming, delay: 1250}
+    });
+    
+    const { ref: sunlightChar7Ref } = useWebAnimations({
+        keyframes: sunlightKeyframes,
+        timing: {...sunlightTiming, delay: 1500}
+    });
+    
+    const { ref: sunlightChar8Ref } = useWebAnimations({
+        keyframes: sunlightKeyframes,
+        timing: {...sunlightTiming, delay: 1750}
+    });
+    
+    const { ref: sunlightChar9Ref } = useWebAnimations({
+        keyframes: sunlightKeyframes,
+        timing: {...sunlightTiming, delay: 2000}
+    });
+    
+    const { ref: sunlightChar10Ref } = useWebAnimations({
+        keyframes: sunlightKeyframes,
+        timing: {...sunlightTiming, delay: 2250}
+    });
+    
+	
+	<span ref={sunlightChar1Ref}>R</span>
+                        <span ref={sunlightChar2Ref}>e</span>
+                        <span ref={sunlightChar3Ref}>l</span>
+                        <span ref={sunlightChar4Ref}>a</span>
+                        <span ref={sunlightChar5Ref}>x</span>
+                        <span> </span>
+                        <span ref={sunlightChar6Ref}>B</span>
+                        <span ref={sunlightChar7Ref}>o</span>
+                        <span ref={sunlightChar8Ref}>o</span>
+                        <span ref={sunlightChar9Ref}>k</span>
+                        <span> </span>
+                        <span ref={sunlightChar10Ref}>S</span>
+                        <span ref={sunlightChar1Ref}>t</span>
+                        <span ref={sunlightChar2Ref}>o</span>
+                        <span ref={sunlightChar3Ref}>r</span>
+                        <span ref={sunlightChar4Ref}>e</span>
+						
+						<span ref={sunlightChar2Ref}>W</span>
+                        <span ref={sunlightChar3Ref}>h</span>
+                        <span ref={sunlightChar4Ref}>e</span>
+                        <span ref={sunlightChar5Ref}>n</span>
+                        <span ref={sunlightChar6Ref}>d</span>
+                        <span ref={sunlightChar7Ref}>a</span>
+                        <span ref={sunlightChar8Ref}>y</span>
+                        <span ref={sunlightChar9Ref}>g</span>
+                        <span ref={sunlightChar10Ref}>e</span>
+                        <span ref={sunlightChar1Ref}>t</span>
+                        <span ref={sunlightChar2Ref}>s</span>
+                        <span ref={sunlightChar3Ref}>t</span>
+                        <span ref={sunlightChar4Ref}>o</span>
+                        <span ref={sunlightChar5Ref}>u</span>
+                        <span ref={sunlightChar6Ref}>g</span>
+                        <span ref={sunlightChar7Ref}>h</span>
+                        <span ref={sunlightChar8Ref}>,</span>
+                        <span ref={sunlightChar9Ref}>y</span>
+                        <span ref={sunlightChar10Ref}>o</span>
+                        <span ref={sunlightChar1Ref}>u</span>
+                        <span ref={sunlightChar2Ref}>n</span>
+                        <span ref={sunlightChar3Ref}>e</span>
+                        <span ref={sunlightChar4Ref}>e</span>
+                        <span ref={sunlightChar5Ref}>d</span>
+                        <span ref={sunlightChar6Ref}>R</span>
+                        <span ref={sunlightChar7Ref}>e</span>
+                        <span ref={sunlightChar8Ref}>l</span>
+                        <span ref={sunlightChar9Ref}>a</span>
+                        <span ref={sunlightChar10Ref}>x</span>
+                        <span ref={sunlightChar1Ref}>.</span>
+						
+						{/* <span ref={sunlightChar1Ref}></span>
+<span ref={sunlightChar2Ref}></span>
+<span ref={sunlightChar3Ref}></span>
+<span ref={sunlightChar4Ref}></span>
+<span ref={sunlightChar5Ref}></span>
+<span ref={sunlightChar6Ref}></span>
+<span ref={sunlightChar7Ref}></span>
+<span ref={sunlightChar8Ref}></span>
+<span ref={sunlightChar9Ref}></span>
+<span ref={sunlightChar10Ref}></span> */}

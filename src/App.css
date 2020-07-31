@@ -1,38 +1,339 @@
-.App {
-  text-align: center;
+* {
+    font-family: 'Amaranth', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, #root {
+    background-color: rgba(238, 238, 238, 0.12);
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.placeholder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.topbar-desktop {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: 0.3s;
+    transition-timing-function: cubic-bezier(.91,.01,.2,1);
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.75), rgba(245, 245, 245, 0.25));
+    box-shadow: 0px -8px 15px rgba(255, 255, 255, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.topbar-desktop *{
+    overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.topbar-sticky {
+    display: flex;
+    justify-content: flex-end;
+    /* max-width: 1280px; */
+    margin: auto 7%;
+    padding-left: 25px;
+    padding-right: 25px;
+    position: relative;
+}
+
+.menu-button {
+    text-shadow: 2px 2px 1px #000000;
+    color: whitesmoke;
+    /* background-image: linear-gradient(to right, whitesmoke, yellow);
+    color: transparent;
+    background-clip: text; */
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 25px;
+    width: 150px;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.75s;
+}
+
+.menu-button:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-shadow: 2px 2px 1px #000000;
+    color: whitesmoke;
+    mix-blend-mode: screen;
+    transform: scale(1.05);
+    transition: 0.75s;
+}
+
+.body {
+    background: repeating-linear-gradient(135deg, white, whitesmoke, rgb(245, 245, 157), rgb(241, 226, 141));
+    background-size: 200% 200%;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.row {
+    font-size: 50px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+}
+
+.row-first{
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 55px;
+    background: gray url('./front.gif') no-repeat left 60%;
+    background-size: 160%;
+}
+
+.heading{
+    color: whitesmoke;
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: 2px 2px #000000;
+}
+
+.description{
+    color: whitesmoke;
+    font-size: 32px;
+    font-weight: 400;
+    text-shadow: 2px 2px 1px #000000;
+    /* animation: sunlight 2s ease-in-out infinite alternate; */
+}
+
+.row-second {
+    min-height: 350px;
+    flex-direction: row;
+    align-items: center;
+    flex: 0 1 450px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card{
+    background: black center no-repeat;
+    margin: 25px 15px;
+    height: 350px;
+    width: 300px;
+    box-shadow: 2px 2px 2px rgba(0,0,0, 0.5);
+    transition: 0.75s;
+    background-size: 220%;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: transparent;
+    height: 100%;
+    width: 100%;
+}
+
+.card div h3{
+    font-size: 36px;
+}
+
+.card div p{
+    padding: 5px 25px;
+    letter-spacing: 0.025px;
+    word-spacing: 0.025px;
+    white-space: pre-wrap;
+    font-size: 20px;
+}
+
+.card div:hover {
+    color: white;
+    text-shadow: 2px 2px 1px #000000;
+    background: rgba(191, 191, 191, 0.5);
+    transition: inherit;
+}
+
+.card div:hover h3 {
+    padding: 2px 15px;
+    border: 5px solid white;
+    box-shadow: 2px 2px 1px #000000, 2px 2px 1px #000000 inset;
+    border-radius: 1px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.75s;
+}
+
+.book {
+    background-image: url('./images/book.jpg');
+}
+
+.audiobook {
+    background-image: url('./images/audiobook.jpg');
+}
+
+.comic {
+    background-image: url('./images/comic.jpeg');
+}
+
+.manga {
+    background-image: url('./images/manga.jpg');
+}
+
+.row-thrid {
+    margin: auto;
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 500px;
+    flex-wrap: nowrap;
+}
+
+.row-thrid-item {
+    padding: 20px;
+}
+
+.map{
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+
+.map iframe{
+    width: 400px;
+}
+
+.contact{
+    letter-spacing: 0;
+    padding: 50px;
+    font-size: 24px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 1px #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.black{
+    padding: 0 5px;
+    color: black;
+    text-shadow: 2px 2px 2px white;
+}
+
+.footer{
+    padding: 20px;
+    height: 100px;
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.75), rgba(245, 245, 245, 0.25));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    text-align: center;
+}
+
+.footer div a, .footer div a:hover{
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    transition: 0.25s;
+}
+
+.footer div a:hover{
+    font-size: 26px;
+    transition: 0.25s;
+}
+
+@media screen and (max-width: 768px){
+    *{
+        overflow-x: hidden;
+    }
+
+    .topbar-desktop{
+        display: none;
+        transition: 0.5s;
+    }
+
+    .body{
+        margin-top: 0px;
+        transition: 0.5s;
+    }
+
+    .row-first{
+        align-items: center;
+        justify-content: flex-start;
+        padding: 50px;
+        min-height: 100vh;
+        text-align: center;
+        background-position: center bottom;
+        background-size: 340%;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 24px;
+    }
+
+    .card {
+        margin: 8px;
+        height: 300px;
+        width: 85%;
+        background-size: 210%;
+    }
+
+    .card div h3{
+        font-size: 24px;
+    }
+
+    .card div p{
+        font-size: 18px;
+    }
+
+    .row-thrid{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .row-thrid-item{
+        justify-content: center;
+        padding: 5px;
+        width: 90%;
+    }
+
+    .map, .contact, .map iframe{
+        margin: 10px;
+        width: 100%;
+    }
+
+    .contact{
+        justify-content: flex-start;
+    }
+
+    .footer, .footer div a{
+        font-size: 18px;
+    }
+
+    .footer div a:hover{
+        font-size: 22px;
+    }
 }
